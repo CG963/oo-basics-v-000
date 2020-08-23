@@ -7,30 +7,11 @@ class Shoe
   end
  
   def cobble
-    puts "Flipping the page...wow, you read fast!"
+    shoe.condition == "new" 
+    puts "Your shoe is as good as new!"
   end
  
 end
 
 shoe = Shoe.new("Nike")
-shoe.properties
-
- 
-
-  
-
-   
-
-  describe '#cobble' do
-    it 'says that the shoe has been repaired' do
-      expect($stdout).to receive(:puts).with("Your shoe is as good as new!")
-      shoe.cobble
-    end
-
-    it 'makes the shoe\'s condition new' do
-      shoe.condition = "old"
-      shoe.cobble
-      expect(shoe.condition).to eq("new")
-    end
-  end
-end
+shoe.cobble
