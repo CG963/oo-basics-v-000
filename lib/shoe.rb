@@ -12,7 +12,7 @@ class Shoe
  
 end
 
-book = Book.new("Some Title")
+shoe = Book.new("Some Title")
 book.turn_page
 
 describe 'Shoe' do
