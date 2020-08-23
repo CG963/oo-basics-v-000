@@ -12,8 +12,8 @@ class Shoe
  
 end
 
-shoe = Book.new("Some Title")
-book.turn_page
+shoe = Shoe.new("Nike")
+shoe.
 
 describe 'Shoe' do
   let(:shoe) { Shoe.new("Nike") }
